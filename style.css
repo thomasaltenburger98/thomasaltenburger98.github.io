@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Italiana';
+    src: url('fonts/Italiana-Regular.ttf');
+}
+@font-face {
+    font-family: 'Train One';
+    src: url('fonts/TrainOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Heebo';
+    src: url('fonts/Heebo-Regular.ttf');
+}
+
+
+:root {
+    --color-yellow: rgba(219, 255, 0, 0.7);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(180deg, #190025 0.01%, #28003C 52.08%, #190025 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.arrow,
+.github-link {
+    margin: 0 auto auto 16rem;
+}
+.arrow {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.github-link {
+    padding: 0 1rem 0 1rem;
+}
+
+.arrow::before {
+    content: '\f063';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    animation: moveArrow 2s infinite;
+    height: 60%;
+}
+.arrow:hover::before {
+    transform: translateY(-5px);
+}
+
+@keyframes moveArrow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+header nav {
+    font-family: 'Italiana';
+}
+header h1, 
+header h1:after {
+    /* background: linear-gradient(90deg, rgba(0, 255, 255, 0.8) 32.04%, rgba(219, 255, 0, 0.8) 85.68%); */
+    background: linear-gradient(-45deg, #23d5ab, #8bd523, #23a6d5, #cfd523);
+    background-size: 400% 400%;
+    animation-name: moving-header-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+header h1:after {
+    content: "";
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+header h1 {
+    display: inline-block;
+    position: relative;
+    font-family: 'Train One';
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 1.445em;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@keyframes moving-header-color {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.custom-opacity-light {
+    opacity: 0.55;
+}
+.custom-bg-green-light {
+    background: var(--color-yellow);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header > nav:nth-child(1) {
+    flex: 0 0 auto;
+}
+header > div:nth-child(2) {
+    flex: 1 0 0;
+    min-height: 500px;
+}
+
+main {
+    font-family: 'Heebo';
+}
+
+main h1, 
+main h2 {
+    letter-spacing: 0.1em;
+    font-size: 48px;
+}
+main h4 {
+    color: var(--color-yellow);
+}
+
+.rounded-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rounded-circle span {
+    font-size: 36px;
+    color: black;
+}
+
+.glide__slides {
+    height: 350px;
+}
+.glide__slide {
+    background: #242424;
+}
+
+#timeline-wrapper {
+    height: 100vh; 
+    overflow: auto;
+}
+.timeline-number-line, 
+.timeline-number-circle {
+    opacity: 0.7;
+}
