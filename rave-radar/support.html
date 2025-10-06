@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rave Radar - Event Recommender — Support</title>
+  <meta name="description" content="Get help with Rave Radar. Contact support, read FAQs, and find troubleshooting steps." />
+  <meta property="og:title" content="Rave Radar — Support" />
+  <meta property="og:description" content="Get help with Rave Radar. Contact support, read FAQs, and find troubleshooting steps." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root { --bg:#0b0c10; --card:#121318; --text:#e6e8ee; --muted:#a7adbb; --accent:#7cf3ff; --ok:#a3ffb3; --warn:#ffd27c; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom: 12px; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .logo { width:36px; height:36px; border-radius:12px; background: linear-gradient(145deg,#1e1f25,#0f1015); display:grid; place-items:center; box-shadow: 0 6px 24px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.05); }
+    .logo span { font-weight: 700; color: var(--accent); }
+    h1 { font-size: clamp(24px, 3vw, 32px); margin: 8px 0 4px; }
+    .subtitle { color: var(--muted); margin-bottom: 24px; }
+    .grid { display:grid; grid-template-columns: 1fr; gap:16px; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1.25fr .75fr; } }
+    .card { background:var(--card); border-radius:16px; padding:20px; box-shadow: 0 10px 30px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.04); }
+    h2 { font-size: 18px; margin: 0 0 12px; }
+    h3 { font-size: 16px; margin: 16px 0 8px; }
+    ul, ol { margin: 0 0 0 20px; }
+    .kbd { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; background:#0b0d12; border:1px solid rgba(255,255,255,.06); padding:2px 6px; border-radius:6px; }
+    .pill { display:inline-block; border:1px solid rgba(255,255,255,.1); padding:4px 10px; border-radius:999px; color:var(--muted); font-size:12px; margin-right:6px; }
+    .lang { margin-top: 10px; }
+    footer { margin-top: 32px; color: var(--muted); font-size: 13px; }
+    .ok { color: var(--ok); }
+    .warn { color: var(--warn); }
+    .btn { display:inline-block; background:linear-gradient(180deg, #1a9fb0, #107381); color:#001015; padding:10px 14px; border-radius:12px; font-weight:700; }
+    .stack { display:flex; flex-direction:column; gap:8px; }
+    .row { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+    .mono { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .muted { color: var(--muted); }
+    details { border:1px solid rgba(255,255,255,.06); border-radius:12px; padding:12px 14px; margin:8px 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    .hr { height:1px; background: linear-gradient(90deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); margin: 18px 0; border:0; }
+  </style>
+
+  <!-- Structured data to help Apple & SEO understand this as a support/FAQ page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How can I contact Rave Radar support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Email us at thomas.altenburger@hotmail.com. We typically respond within 24–48 hours."
+      }
+    },{
+      "@type": "Question",
+      "name": "Do I need an account to use Rave Radar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Rave Radar uses a randomly generated token to identify your device—no sign-up required."
+      }
+    },{
+      "@type": "Question",
+      "name": "What data does Rave Radar collect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We collect minimal data to provide recommendations (e.g., music preferences, approximate location if you allow it). Data is anonymized. See our Privacy Policy for full details."
+      }
+    }]
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"><span>RR</span></div>
+        <div>
+          <h1>Rave Radar — Support</h1>
+          <div class="subtitle">Get help, read FAQs, and contact us.</div>
+        </div>
+      </div>
+      <a class="btn" href="mailto:thomas.altenburger@hotmail.com">Email Support</a>
+    </header>
+
+    <div class="grid">
+      <!-- Main -->
+      <section class="card" aria-labelledby="contact">
+        <h2 id="contact">Contact & Response Times</h2>
+        <div class="stack">
+          <div><span class="pill">Email</span> <a href="mailto:thomas.altenburger@hotmail.com">thomas.altenburger@hotmail.com</a></div>
+          <div><span class="pill">Response</span> Typically <strong>24–48h</strong> on weekdays</div>
+          <div><span class="pill">Languages</span> English, German</div>
+        </div>
+
+        <hr class="hr" />
+      </section>
+
+      <!-- Side -->
+      <aside class="card" aria-labelledby="links">
+        <h2 id="links">Useful Links</h2>
+        <ul>
+          <li><a href="https://thomasaltenburger98.github.io/rave-radar/privacy.html" rel="noopener">Privacy Policy</a></li>
+          <li><a href="https://thomasaltenburger98.github.io/rave-radar/terms-conditions.html" rel="noopener">Terms of Use</a></li>
+        </ul>
+
+        <h3>Version</h3>
+        <p class="mono">Rave Radar - Event Recommender (iOS — v1.0.0)</p>
+      </aside>
+    </div>
+
+    <section class="card" aria-labelledby="faq">
+      <h2 id="faq">FAQs</h2>
+
+      <details open>
+        <summary>Do I need an account to use Rave Radar?</summary>
+        <p>No. You can use Rave Radar without signing up. We generate a random token on your device to keep your preferences.</p>
+      </details>
+
+      <details>
+        <summary>What data do you collect and why?</summary>
+        <p>We collect only what’s necessary to recommend events (e.g., your artist likes and—if enabled—approximate location). Data is anonymized and processed according to our <a href="https://thomasaltenburger98.github.io/rave-radar/privacy.html">Privacy Policy</a>.</p>
+      </details>
+
+      <details>
+        <summary>How do I report a bug or request a feature?</summary>
+        <p>Email us at <a href="mailto:thomas.altenburger@hotmail.com">thomas.altenburger@hotmail.com</a> with a short description, app version, and steps to reproduce. We love feedback! <span class="ok">More features coming soon.</span></p>
+      </details>
+
+      <details>
+        <summary>I can’t hear music previews.</summary>
+        <ul>
+          <li>Check your internet connection and device volume.</li>
+          <li>Verify system <span class="kbd">Silent Mode</span> is off.</li>
+          <li>Restart the app. If it persists, contact support.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Location reminders don’t trigger.</summary>
+        <ul>
+          <li>Ensure location access is allowed: <span class="kbd">Settings → Privacy → Location Services</span>.</li>
+          <li>Background refresh must be enabled for Rave Radar.</li>
+          <li>If still not working, email us your device model and iOS version.</li>
+        </ul>
+      </details>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Rave Radar - Event Recommender. All rights reserved. · <a href="mailto:thomas.altenburger@hotmail.com">thomas.altenburger@hotmail.com</a>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
