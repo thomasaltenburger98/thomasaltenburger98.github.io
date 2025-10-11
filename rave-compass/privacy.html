@@ -36,11 +36,11 @@
         <ul>
             <li>Geolocation Services: The Service Provider utilizes location data to provide features such as
                 personalized content, relevant recommendations, and location-based services.</li>
-            <li>If location data is collected from the user, it will be temporarily cached on the backend server for approximately 30 minutes. 
+            <li>Caching: If location data is collected from the user, it will be temporarily cached on the backend server for approximately 30 minutes. 
                 This caching process is necessary for data processing purposes, for example to calculate the ETA (Estimated Time of Arrival). 
                 If the location data is not updated within this 30-minute period — for instance, because the app is not in use or the location permission has been declined — the previously stored location data will be automatically deleted. 
-                The ETA information (i.e., the estimated time to travel from the user’s current location to the venue) may be stored for a longer period, at least until the next location update (for example, when the user moves) — in order to reduce server requests and improve performance.
             </li>
+            <li>Location refresh: For privacy and performance purposes, the user’s location will only be updated if the difference between the previous and the new location is significant.</li>
             <li>Third-Party Services: Periodically, anonymized location data will be shared with Google Maps API, 
                 in order to get ETA times to the venues. 
                 Further information about data processing by Google can be found here: <a href="https://cloud.google.com/maps-platform/terms">https://cloud.google.com/maps-platform/terms</a></li>
